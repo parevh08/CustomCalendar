@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xnd-pH-84q">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamPro-Bold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="etv-a9-G3O">
+            <objects>
+                <viewController id="xnd-pH-84q" customClass="ViewController" customModule="CustomCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egc-vg-PZe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOz-ke-ufB">
+                                <rect key="frame" x="16" y="67" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="F82-h2-d7t"/>
+                                    <constraint firstAttribute="width" constant="40" id="O8M-y5-Q8S"/>
+                                </constraints>
+                                <color key="tintColor" white="0.67078550169999995" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="previosMonth" destination="xnd-pH-84q" eventType="touchUpInside" id="oEi-t1-LgH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-9G-Epm">
+                                <rect key="frame" x="337" y="67" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Rjn-SO-0EY"/>
+                                    <constraint firstAttribute="height" constant="35" id="zXw-ry-hsq"/>
+                                </constraints>
+                                <color key="tintColor" white="0.67078550169999995" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="nextMonth" destination="xnd-pH-84q" eventType="touchUpInside" id="QEM-vx-Xjx"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eUY-6E-srd">
+                                <rect key="frame" x="0.0" y="119" width="393" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIP-W9-a6a" userLabel="Mon">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEX-l8-gnY" userLabel="Mon">
+                                        <rect key="frame" x="56" y="0.0" width="56.333333333333343" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL6-4N-zlq" userLabel="Mon">
+                                        <rect key="frame" x="112.33333333333331" y="0.0" width="56" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-Dg-zSc" userLabel="Mon">
+                                        <rect key="frame" x="168.33333333333334" y="0.0" width="56.333333333333343" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLq-46-87c" userLabel="Mon">
+                                        <rect key="frame" x="224.66666666666666" y="0.0" width="55.999999999999972" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4a-ak-mRI" userLabel="Mon">
+                                        <rect key="frame" x="280.66666666666669" y="0.0" width="56.333333333333314" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkJ-ha-hZc" userLabel="Mon">
+                                        <rect key="frame" x="337" y="0.0" width="56" height="30"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.42468963669999998" green="0.42468963669999998" blue="0.42468963669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2VR-Vh-J64"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-wX-L0W">
+                                <rect key="frame" x="0.0" y="157" width="393" height="661"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="oBK-bj-QQt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xnd-pH-84q" id="H7E-Yt-pJ9"/>
+                                    <outlet property="delegate" destination="xnd-pH-84q" id="csp-9X-RD7"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cls-eg-7oe">
+                                <rect key="frame" x="64" y="67" width="265" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="04t-Mr-pv6"/>
+                                    <constraint firstAttribute="height" constant="35" id="jlt-6r-fbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvJ-q7-9VN">
+                                <rect key="frame" x="16" y="110" width="361" height="1"/>
+                                <color key="backgroundColor" red="0.32156863810000003" green="0.31372550129999999" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Yk4-Q4-fWb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ede-0h-VQ8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IvJ-q7-9VN" firstAttribute="trailing" secondItem="egc-vg-PZe" secondAttribute="trailingMargin" id="8tx-BR-JQC"/>
+                            <constraint firstItem="IvJ-q7-9VN" firstAttribute="top" secondItem="Cls-eg-7oe" secondAttribute="bottom" constant="8" id="DGX-7d-WNK"/>
+                            <constraint firstItem="eUY-6E-srd" firstAttribute="top" secondItem="IvJ-q7-9VN" secondAttribute="bottom" constant="8" id="J1y-OV-QIO"/>
+                            <constraint firstItem="eUY-6E-srd" firstAttribute="leading" secondItem="ede-0h-VQ8" secondAttribute="leading" id="Jmp-Se-DTd"/>
+                            <constraint firstItem="IvJ-q7-9VN" firstAttribute="leading" secondItem="egc-vg-PZe" secondAttribute="leadingMargin" id="Kpt-sp-Ebe"/>
+                            <constraint firstItem="Cls-eg-7oe" firstAttribute="top" secondItem="ede-0h-VQ8" secondAttribute="top" constant="8" id="ODU-rp-3jU"/>
+                            <constraint firstItem="AOz-ke-ufB" firstAttribute="top" secondItem="ede-0h-VQ8" secondAttribute="top" constant="8" id="Qkn-yU-pvk"/>
+                            <constraint firstItem="mOv-wX-L0W" firstAttribute="leading" secondItem="ede-0h-VQ8" secondAttribute="leading" id="Vqq-qr-cEo"/>
+                            <constraint firstItem="mOv-wX-L0W" firstAttribute="top" secondItem="eUY-6E-srd" secondAttribute="bottom" constant="8" id="aS2-Br-JrR"/>
+                            <constraint firstItem="Cls-eg-7oe" firstAttribute="leading" secondItem="AOz-ke-ufB" secondAttribute="trailing" constant="8" symbolic="YES" id="b3y-cd-sr7"/>
+                            <constraint firstItem="h3c-9G-Epm" firstAttribute="top" secondItem="ede-0h-VQ8" secondAttribute="top" constant="8" id="e7j-tZ-kkc"/>
+                            <constraint firstItem="eUY-6E-srd" firstAttribute="centerX" secondItem="ede-0h-VQ8" secondAttribute="centerX" id="fmr-Ty-hfx"/>
+                            <constraint firstItem="ede-0h-VQ8" firstAttribute="trailing" secondItem="eUY-6E-srd" secondAttribute="trailing" id="nEe-Wx-paB"/>
+                            <constraint firstItem="mOv-wX-L0W" firstAttribute="trailing" secondItem="ede-0h-VQ8" secondAttribute="trailing" id="pq8-bO-C7r"/>
+                            <constraint firstItem="ede-0h-VQ8" firstAttribute="bottom" secondItem="mOv-wX-L0W" secondAttribute="bottom" id="rGA-2s-DPG"/>
+                            <constraint firstItem="Cls-eg-7oe" firstAttribute="centerX" secondItem="ede-0h-VQ8" secondAttribute="centerX" id="ySv-lp-0tU"/>
+                            <constraint firstItem="h3c-9G-Epm" firstAttribute="leading" secondItem="Cls-eg-7oe" secondAttribute="trailing" constant="8" symbolic="YES" id="zgU-O9-AnN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="mOv-wX-L0W" id="Kml-NZ-i7I"/>
+                        <outlet property="dateLabel" destination="Cls-eg-7oe" id="LLq-q8-o5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXL-se-GSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-477" y="978"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
